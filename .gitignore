@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Skill 运行产物
+output/
+*.optimized.docx
+resume_optimized_*.docx
+resume_original_backup.docx
+optimizations.json
