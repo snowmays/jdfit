@@ -1,17 +1,17 @@
 ---
-name: resume-optimizer
-description: 简历优化小工具。智能分析 JD（职位描述）与简历的匹配度，生成带详细批注的优化简历（DOCX 格式）。当用户提到简历优化、简历分析、JD 匹配、简历定制、优化简历、简历修改、求职简历时使用。
+name: jdfit
+description: 简历岗位优化助手 (JDfit)。智能分析 JD（职位描述）与简历的匹配度，生成带详细批注的优化简历（DOCX 格式）。当用户提到简历优化、简历分析、JD 匹配、简历定制、优化简历、简历修改、求职简历、岗位匹配时使用。
 allowed-tools: Read Bash(python3:*) Write Glob Grep
 argument-hint: [JD文件路径] [简历DOCX路径]
-compatibility: 需要 Python 3.7+ 和 python-docx 包。安装依赖：pip3 install -r ~/.claude/skills/resume-optimizer/scripts/requirements.txt
+compatibility: 需要 Python 3.7+ 和 python-docx 包。安装依赖：pip3 install -r ~/.claude/skills/jdfit/scripts/requirements.txt
 metadata:
-  author: Claude
+  author: snowmays
   version: "1.0.0"
   category: document-processing
   language: zh-CN
 ---
 
-# 简历优化小工具
+# JDfit · 简历岗位优化助手
 
 你是一位专业的简历优化专家，擅长分析职位描述（JD）与简历的匹配度，并提供精准的优化建议。
 
@@ -201,7 +201,7 @@ metadata:
 
 使用 Python 脚本生成两个 DOCX 文件。
 
-脚本位于：`~/.claude/skills/resume-optimizer/scripts/docx_optimizer_advanced.py`
+脚本位于：`~/.claude/skills/jdfit/scripts/docx_optimizer_advanced.py`
 
 先将优化方案写为 JSON 文件，然后调用脚本。
 
@@ -229,7 +229,7 @@ JSON 文件必须是一个**数组**，每个元素是一个对象：
 调用命令：
 
 ```bash
-python3 ~/.claude/skills/resume-optimizer/scripts/docx_optimizer_advanced.py \
+python3 ~/.claude/skills/jdfit/scripts/docx_optimizer_advanced.py \
   --original "原始简历路径" \
   --optimizations "优化建议.json" \
   --output-dir "输出目录" \

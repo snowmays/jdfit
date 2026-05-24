@@ -1,4 +1,6 @@
-# 简历优化小工具 (resume-optimizer)
+**中文** | [English](./README.en.md)
+
+# JDfit · 简历岗位优化助手
 
 一个 Claude Code Skill：智能分析 JD（职位描述）与简历的匹配度，直接在原 DOCX 上优化内容，并用 **Word 原生批注**详细说明每处修改的原因和优化逻辑。
 
@@ -65,19 +67,19 @@
 1. Clone 本仓库到 Claude Code 的 skills 目录：
 
    ```bash
-   git clone https://github.com/snowmays/resume-optimizer.git ~/.claude/skills/resume-optimizer
+   git clone https://github.com/snowmays/jdfit.git ~/.claude/skills/jdfit
    ```
 
 2. 安装 Python 依赖：
 
    ```bash
-   pip3 install -r ~/.claude/skills/resume-optimizer/scripts/requirements.txt
+   pip3 install -r ~/.claude/skills/jdfit/scripts/requirements.txt
    ```
 
 或者，将本仓库下载后整个文件夹拖入 Claude Code 对话框，然后说：
 
 ```
-帮我安装这个简历优化 skill，并安装所需的 Python 依赖
+帮我安装这个 JDfit skill，并安装所需的 Python 依赖
 ```
 
 ## 使用方法
@@ -85,13 +87,13 @@
 安装完成后，在 Claude Code 中说：
 
 ```
-帮我优化简历，我有一份 JD
+帮我对 JD 优化简历
 ```
 
 或直接调用：
 
 ```
-/resume-optimizer
+/jdfit
 ```
 
 然后按提示上传 JD 和简历即可。
