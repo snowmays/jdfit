@@ -4,6 +4,8 @@
 
 A Claude Code Skill that scores your resume against a JD and rewrites it in-place — with **native Word comments** explaining the reasoning behind every change.
 
+![JDfit demo: top shows the skill being invoked in Claude Code; bottom shows the rewritten resume with a native Word margin comment](./docs/demo.jpg)
+
 ## Features
 
 - **5-dimension scoring** (100 pts): JD fit (40), Quantified results (25), Structure & logic (15), Language polish (10), ATS-friendliness (10)
